@@ -1,0 +1,84 @@
+@font-face{
+    font-family: 'Montserrat';
+    src:url('../../fonts/Montserrat/static/Montserrat-Bold.ttf')
+}
+
+aside{ 
+    width: 20%;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(51, 147, 232),   rgb(202, 216, 240));
+}
+
+.wrapper {
+    display: flex;
+    background-color: rgb(202, 216, 240);
+    padding-bottom: 50px;
+    scroll-behavior: smooth;
+}
+
+.container_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_animals {
+    width: 80%;
+    color: rgb(10, 10, 199);
+
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: blue;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.home_link{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.link {
+    text-decoration: none;
+    color:rgb(63, 63, 236);
+    font-style: italic;
+}
+
+.li_style{
+    margin-bottom: 20px;
+}
+
+.item{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-decoration: none;
+    color:blue;
+}
+
+.item:hover{   
+    color:rgb(5, 5, 159);
+}
+
+
+
+
+
+
+
+
+

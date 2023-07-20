@@ -1,0 +1,9 @@
+.main_container {
+    height: 100vh;
+    color: violet;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    text-align: center;
+    background-color: rgb(244, 214, 244);
+}

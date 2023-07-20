@@ -1,17 +1,40 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import './index.css'
+import reportWebVitals from './reportWebVitals'
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import Body from './components/main/Body'
+import Header from './components/header/Header'
+import ForParents from './components/for_parents/ForParents'
+import InterestingFacts from './components/interest_facts/InterestingFacts'
+import Footer from './components/footer/Footer'
+import NotFound from './components/notFound/NotFound'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const HomePageLayot = () => {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', background: ' rgb(202, 216, 240', fontFamily: 'Montserrat'}}>
+      <div style={{ flex: '1' }}>
+        <Header />
+        <Body />
+      </div>
+      <Footer />
+    </div>
+  )
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<HomePageLayot />} />
+      <Route path='/for_parents/' element={<ForParents />} />
+      <Route path='/interest_facts/' element={<InterestingFacts />} />
+      <Route path='*' element={<NotFound/>}/>
+    </Routes>
+  </BrowserRouter>
+)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+reportWebVitals()

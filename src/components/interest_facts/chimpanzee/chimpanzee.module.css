@@ -1,0 +1,42 @@
+.container_chimpanzee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content_title {
+    display: flex;
+    text-align: start;
+    margin-bottom: 30px;
+    color: blue;
+}
+
+.chimpanzee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.chimpanzee:hover {
+    transition-duration: 1s;
+    box-shadow: 0 0 50px rgb(51, 147, 232);
+}
+
+.img {
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.content_main {
+    width: 800px;
+    padding-left: 15px;
+    margin-top: 20px;
+}
