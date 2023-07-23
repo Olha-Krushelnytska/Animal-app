@@ -9,7 +9,7 @@
     display: flex;
     text-align: start;
     margin-bottom: 30px;
-    color: blue;
+    color:  rgb(43, 2, 2);
 }
 
 .jellyfish {
@@ -20,10 +20,10 @@
     width: 800px;
     height: 500px;
     border-radius: 20px;
+    transition-duration: 1s;
 }
 
 .jellyfish:hover{
-    transition-duration: 1s;
     box-shadow: 0 0 50px rgb(51, 147, 232); 
 }
 
@@ -37,5 +37,6 @@
     width: 800px;
     padding-left: 15px;
     margin-top: 20px;
+    color:  rgb(43, 2, 2);
 }
 

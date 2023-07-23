@@ -4,9 +4,14 @@ import style from "../footer/footer.module.css";
 const Footer = () => {
   return (
     <footer className={style.wrapper}>
-      <p>Зануртесь у світ тварин та дізнайтеся щось нове!</p>
+      {/* <p>Зануртесь у світ тварин та дізнайтеся щось нове!</p> */}
       <div className={style.main_container}>
-        <div>Додаток створила Крушельницька Ольга</div>
+        <div className={style.contacts}>
+        <ul>
+          <li className={style.li}>Розробила Крушельницька Ольга</li>
+          <li> <a className={style.mail} target="_blank" href="https://github.com/Olha-Krushelnytska/Animal-app.git">https://github.com/Olha-Krushelnytska/Animal-app.git</a></li>
+        </ul>
+        </div>
         <div className={style.contacts}>
           <ul>
             <li className={style.li}>Можна зв'язатися зі мною:</li>

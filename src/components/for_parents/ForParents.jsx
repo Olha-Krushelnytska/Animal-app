@@ -6,19 +6,17 @@ const ForParents = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.container_title}>
-        <div>
           <div className={style.container_link}>
             <a className={style.link} href="http://localhost:3000/">
               На головну
-            </a>
-          </div>
+            </a> 
           <div>
-            <h3>Шановні батьки,</h3>
+            <div className={style.title_main}><h3>Шановні батьки,</h3>
             <h4>
               з радістю представляю вам новий додаток, який не тільки
               розважатиме вашу дитину, але й допоможе їй вивчати англійську мову
               та відкривати чарівний світ тварин
-            </h4>
+            </h4></div>
             <div className={style.subtitle}>
               <h5>Важливість цього додатку полягає в таких аспектах:</h5>
             </div>

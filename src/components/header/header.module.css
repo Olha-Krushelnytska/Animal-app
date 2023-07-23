@@ -22,13 +22,21 @@
 
 .link_facts {
   text-decoration: none;
-  color: blue;
+  color:  rgb(43, 2, 2);
+  font-weight: bold;
+}
+.link_facts:hover{
+color: blue;
 }
 
 .link_parents {
   text-decoration: none;
-  color: blue;
+  color: rgb(43, 2, 2);
+  font-weight: bold;
 }
+.link_parents:hover{
+  color: blue;
+  }
 
 .logo_container {
   display: flex;
@@ -37,8 +45,9 @@
 }
 
 .logo_info {
-  color: blue;
+  color: rgb(17, 17, 117);
   font-style: italic;
+  font-weight: bold;
 }
 
 .paw_img {

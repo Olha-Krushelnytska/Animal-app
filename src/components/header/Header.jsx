@@ -8,7 +8,7 @@ const Header = () => {
       <div className={style.facts_info}>
         <a
           className={style.link_facts}
-          href="http://localhost:3000/interest_facts/"
+          href="http://localhost:3000/interest-facts/"
         >
           <div>Цікаві факти</div>
           <div>про тварин</div>
@@ -25,7 +25,7 @@ const Header = () => {
       <div>
         <a
           className={style.link_parents}
-          href="http://localhost:3000/for_parents/"
+          href="http://localhost:3000/for-parents/"
         >
           Для батьків
         </a>

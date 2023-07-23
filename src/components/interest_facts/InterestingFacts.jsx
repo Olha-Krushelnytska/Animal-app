@@ -18,20 +18,22 @@ function InterestingFacts() {
     <div className={style.wrapper}>
       <aside className={style.container_nav}>
         <div className={style.container_title}>
-        <div className={style.home_link}>
-        <a className={style.link} href="http://localhost:3000/">
+          <div className={style.home_link}>
+            <a className={style.link} href="http://localhost:3000/">
               На головну
-            </a> 
-          </div> 
-          <div className={style.title}> 
-          <h2>
-            Цікаві факти <br /> про тварин
-          </h2>    
+            </a>
           </div>
-                
+          <div className={style.title}>
+            <h2>
+              <b>
+                {" "}
+                Цікаві факти <br /> про тварин
+              </b>
+            </h2>
+          </div>
         </div>
 
-        <ul>
+        <ul className={style.list_style}>
           <li className={style.li_style}>
             <AnchorLink className={style.item} href="#whale">
               Найбільша тварина
@@ -93,9 +95,9 @@ function InterestingFacts() {
         <Frog />
         <Elephant />
         <Chimpanzee />
-        <Snake/>
+        <Snake />
         <Turtle />
-        <Peacock/>
+        <Peacock />
       </div>
     </div>
   );

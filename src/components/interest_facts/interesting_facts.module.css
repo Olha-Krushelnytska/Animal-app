@@ -1,20 +1,20 @@
-@font-face{
+@font-face {
     font-family: 'Montserrat';
-    src:url('../../fonts/Montserrat/static/Montserrat-Bold.ttf')
+    src: url('../../fonts/Montserrat/static/Montserrat-Bold.ttf')
 }
 
-aside{ 
-    width: 20%;
+aside {
+    width: 25%;
     position: sticky;
     top: 0;
     height: 100vh;
-    background: linear-gradient(to right, rgb(51, 147, 232),   rgb(202, 216, 240));
+    background: linear-gradient(to right, rgb(51, 147, 232), rgb(202, 216, 240));
+    padding-left: 50px;
 }
 
 .wrapper {
     display: flex;
     background-color: rgb(202, 216, 240);
-    padding-bottom: 50px;
     scroll-behavior: smooth;
 }
 
@@ -25,60 +25,61 @@ aside{
     align-items: center;
 }
 
-.container_title{
+.container_title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-right: 60px;
 }
 
 .container_animals {
     width: 80%;
-    color: rgb(10, 10, 199);
-
+    color: rgb(108, 7, 7);
 }
 
 .title {
     display: flex;
     align-items: center;
     text-align: center;
-    color: blue;
+    color: rgb(5, 5, 159);
     font-family: 'Montserrat';
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 20px;
 }
 
-.home_link{
+.home_link {
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
 .link {
     text-decoration: none;
-    color:rgb(63, 63, 236);
+    color: rgb(63, 63, 236);
     font-style: italic;
 }
 
-.li_style{
+.link:hover{
+    color: blue;
+}
+
+.list_style {
+    list-style-type: decimal;
+    color: rgb(5, 5, 159);
+    font-weight: bold;
+}
+
+.li_style {
     margin-bottom: 20px;
 }
 
-.item{
+.item {
     font-family: 'Montserrat';
     font-weight: bold;
     text-decoration: none;
-    color:blue;
+    color: blue;
 }
 
-.item:hover{   
-    color:rgb(5, 5, 159);
+.item:hover {
+    color: rgb(5, 5, 159);
 }
-
-
-
-
-
-
-
-
-

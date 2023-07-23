@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import style from "../main/body.module.css";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
@@ -9,22 +9,17 @@ import env from "react-dotenv";
 import Spinner from "../spinner/Spinner";
 
 const Body = () => {
-  const [photo, setPhoto] = useState("");
+  const [inputValue, setInputValue] = useState("");
   const [result, setResult] = useState([]);
   const [btnDisabled, setBtnDisabled] = useState(true);
   const [loading, setLoading] = useState(false);
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 5000);
-  }, []);
 
   const changePhoto = async () => {
+    setInputValue("");
     setLoading(true);
     try {
       const response = await fetch(
-        `${env.API_URL}${photo}&client_id=${env.CLIENT_KEY}`
+        `${env.API_URL}${inputValue}&client_id=${env.CLIENT_KEY}`
       )
         .then((response) => response.json())
         .then((data) => setResult(data.results));
@@ -36,15 +31,11 @@ const Body = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setPhoto();
-  };
-
-  const handleChange = (event) => {
     const value = event.target.value;
+    setInputValue(value);
     if (value) {
       setBtnDisabled(false);
     } else setBtnDisabled(true);
-    setPhoto(value);
   };
 
   return (
@@ -56,8 +47,8 @@ const Body = () => {
               <img className={style.img_search} src={search} alt="search" />
             </InputGroup.Text>
             <Form.Control
-              value={photo}
-              onChange={handleChange}
+              value={inputValue}
+              onChange={handleSubmit}
               placeholder="ANIMAL"
               aria-label="Username"
               aria-describedby="basic-addon1"

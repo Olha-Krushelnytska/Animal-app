@@ -29,8 +29,8 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path='/' element={<HomePageLayot />} />
-      <Route path='/for_parents/' element={<ForParents />} />
-      <Route path='/interest_facts/' element={<InterestingFacts />} />
+      <Route path='/for-parents/' element={<ForParents />} />
+      <Route path='/interest-facts/' element={<InterestingFacts />} />
       <Route path='*' element={<NotFound/>}/>
     </Routes>
   </BrowserRouter>
