@@ -20,9 +20,9 @@ const Body = () => {
     try {
       const response = await fetch(
         `${env.API_URL}${inputValue}&client_id=${env.CLIENT_KEY}`
-      )
-        .then((response) => response.json())
-        .then((data) => setResult(data.results));
+      );
+      const data = await response.json();
+      setResult(data.results);
       setBtnDisabled(true);
     } catch (error) {
       console.error(error);

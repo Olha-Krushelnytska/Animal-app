@@ -1,6 +1,7 @@
 import React from "react";
 import style from "../interest_facts/interesting_facts.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import  Link  from "react-bootstrap/NavLink";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import BluWhale from "./bluWhale/BluWhale";
 import JellyFish from "./jellyFish/JellyFish";
@@ -19,9 +20,9 @@ function InterestingFacts() {
       <aside className={style.container_nav}>
         <div className={style.container_title}>
           <div className={style.home_link}>
-            <a className={style.link} href="http://localhost:3000/">
+            <Link className={style.link} href="http://localhost:3000/">
               На головну
-            </a>
+            </Link>
           </div>
           <div className={style.title}>
             <h2>

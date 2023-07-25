@@ -1,15 +1,16 @@
 import React from "react";
 import style from "../for_parents/for_parents.module.css";
 import Accordion from "react-bootstrap/Accordion";
+import Link from "react-bootstrap/NavLink"
 
 const ForParents = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.container_title}>
         <div className={style.container_link}>
-          <a className={style.link} href="http://localhost:3000/">
+          <Link className={style.link} href="http://localhost:3000/">
             На головну
-          </a>
+          </Link>
           <div>
             <div className={style.title_main}>
               <h3>Шановні батьки,</h3>

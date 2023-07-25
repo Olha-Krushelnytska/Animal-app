@@ -1,18 +1,19 @@
 import React from "react";
 import style from "../header/header.module.css";
 import paw from "../../img/paw.png";
+import Link from "react-bootstrap/NavLink"
 
 const Header = () => {
   return (
     <div className={style.main_container}>
       <div className={style.facts_info}>
-        <a
+        <Link
           className={style.link_facts}
           href="http://localhost:3000/interest-facts/"
         >
           <div>Цікаві факти</div>
           <div>про тварин</div>
-        </a>
+        </Link>
       </div>
       <div className={style.logo_container}>
         <img className={style.paw_img} src={paw} alt="tiger_paw" />
@@ -23,12 +24,12 @@ const Header = () => {
       </div>
 
       <div>
-        <a
+        <Link
           className={style.link_parents}
           href="http://localhost:3000/for-parents/"
         >
           Для батьків
-        </a>
+        </Link>
       </div>
     </div>
   );
