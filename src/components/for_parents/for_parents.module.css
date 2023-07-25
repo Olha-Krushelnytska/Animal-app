@@ -15,12 +15,8 @@
      padding-right: 150px;
      padding-left: 150px;
      color: rgb(43, 2, 2);
-     margin-bottom: 50px;
  }
 
- .container_link {
-    margin-top: 50px; 
- }
 
  .link {
      text-decoration: none;
@@ -32,8 +28,8 @@
      color: blue;
  }
 
- .title_main{
-    margin-top: 20px;
+ .title_main {
+     margin-top: 20px;
  }
 
  .container_title {
@@ -54,7 +50,7 @@
 
 
  .accordion_content {
-    color: rgb(43, 2, 2);
+     color: rgb(43, 2, 2);
  }
 
  .accordion {

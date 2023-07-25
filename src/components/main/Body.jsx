@@ -8,6 +8,7 @@ import search from "../../img/search.png";
 import env from "react-dotenv";
 import Spinner from "../spinner/Spinner";
 
+
 const Body = () => {
   const [inputValue, setInputValue] = useState("");
   const [result, setResult] = useState([]);
@@ -23,6 +24,7 @@ const Body = () => {
       )
         .then((response) => response.json())
         .then((data) => setResult(data.results));
+        setBtnDisabled(true);
     } catch (error) {
       console.error(error);
     }
@@ -31,12 +33,20 @@ const Body = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    if(inputValue){
+      changePhoto();
+    }
+  };
+
+  const handleChange = (event)=> {
     const value = event.target.value;
     setInputValue(value);
-    if (value) {
+    if (value){
       setBtnDisabled(false);
-    } else setBtnDisabled(true);
-  };
+    }else setBtnDisabled(true);
+  }
+
+
 
   return (
     <div className={style.wrapper}>
@@ -48,7 +58,7 @@ const Body = () => {
             </InputGroup.Text>
             <Form.Control
               value={inputValue}
-              onChange={handleSubmit}
+              onChange={handleChange}
               placeholder="ANIMAL"
               aria-label="Username"
               aria-describedby="basic-addon1"
@@ -59,7 +69,6 @@ const Body = () => {
             disabled={btnDisabled}
             className={style.btn}
             type="submit"
-            onClick={changePhoto}
             variant="primary"
           >
             Search
@@ -80,7 +89,7 @@ const Body = () => {
                 />
               </a>
             </div>
-          ) : null}
+          ) : null }
         </div>
       </div>
     </div>

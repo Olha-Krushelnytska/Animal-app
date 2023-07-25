@@ -58,7 +58,7 @@ const ForParents = () => {
               свої думки.
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="3">
+          {/* <Accordion.Item eventKey="3">
             <Accordion.Header>Візуальне сприйняття</Accordion.Header>
             <Accordion.Body className={style.accordion_content}>
               Поява реалістичних зображень тварин допоможе дитині легше
@@ -66,8 +66,8 @@ const ForParents = () => {
               розрізняти різні види тварин за їх зовнішніми ознаками та
               кольорами.
             </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="4">
+          </Accordion.Item> */}
+          <Accordion.Item eventKey="3">
             <Accordion.Header>Сімейна взаємодія</Accordion.Header>
             <Accordion.Body className={style.accordion_content}>
               Використання додатка може стати спільною активністю для всієї
