@@ -5,12 +5,13 @@
   justify-content: center;
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 .container_search {
   width: 500px;
 }
@@ -20,9 +21,9 @@
   height: 30px;
 }
 
-.container{
+.container {
   position: relative;
-  top:10px;
+  top: 10px;
 }
 
 .img_animal {
@@ -30,21 +31,26 @@
   height: 600px;
   object-fit: cover;
   border-radius: 25px;
-  transition-duration: 1s ;
+  transition-duration: 1s;
 }
 
-.img_animal:hover{
-  box-shadow: 10px 10px 5px 5px rgb(51, 147, 232) ; 
+.img_animal:hover {
+  box-shadow: 10px 10px 5px 5px rgb(51, 147, 232);
 }
 
 .btn {
   display: inline-block;
   margin-left: 10px;
 }
-.spinner{
-display: flex;
-align-items: center;
-text-align: center;
-padding-left: 130px;
-margin-top: 60px;
+
+.spinner {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 130px;
+  margin-top: 60px;
+}
+
+.message {
+  color: blue;
 }

@@ -10,9 +10,9 @@ const Giraffe = () => {
   return (
     <div>
       <div className={style.container_giraffe} id="giraffe">
-      <div className={style.content_title}>
-              <h3>Найвища тварина</h3>
-            </div>
+        <div className={style.content_title}>
+          <h3>Найвища тварина</h3>
+        </div>
         <div className={style.giraffe}>
           <Carousel>
             <Carousel.Item>
@@ -40,7 +40,6 @@ const Giraffe = () => {
 
         <div className={style.content_main}>
           <div className={style.content_info}>
-
             <p>
               1. Жирафа може досягати висоти до 5,5-6 метрів, з ногами завдовжки
               близько 1,8 метра.
@@ -54,9 +53,7 @@ const Giraffe = () => {
               4. Жирафа має неймовірно потужне серце. Воно може важити близько
               11 кілограмів і має розміри приблизно 60 сантиметрів у довжину.
             </p>
-            <p>
-              5. Жирафи сплять стоячи.
-            </p>
+            <p>5. Жирафи сплять стоячи.</p>
           </div>
         </div>
       </div>

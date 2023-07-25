@@ -6,17 +6,19 @@ const ForParents = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.container_title}>
-          <div className={style.container_link}>
-            <a className={style.link} href="http://localhost:3000/">
-              На головну
-            </a> 
+        <div className={style.container_link}>
+          <a className={style.link} href="http://localhost:3000/">
+            На головну
+          </a>
           <div>
-            <div className={style.title_main}><h3>Шановні батьки,</h3>
-            <h4>
-              з радістю представляю вам новий додаток, який не тільки
-              розважатиме вашу дитину, але й допоможе їй вивчати англійську мову
-              та відкривати чарівний світ тварин
-            </h4></div>
+            <div className={style.title_main}>
+              <h3>Шановні батьки,</h3>
+              <h4>
+                з радістю представляю вам новий додаток, який не тільки
+                розважатиме вашу дитину, але й допоможе їй вивчати англійську
+                мову та відкривати чарівний світ тварин
+              </h4>
+            </div>
             <div className={style.subtitle}>
               <h5>Важливість цього додатку полягає в таких аспектах:</h5>
             </div>
@@ -58,15 +60,6 @@ const ForParents = () => {
               свої думки.
             </Accordion.Body>
           </Accordion.Item>
-          {/* <Accordion.Item eventKey="3">
-            <Accordion.Header>Візуальне сприйняття</Accordion.Header>
-            <Accordion.Body className={style.accordion_content}>
-              Поява реалістичних зображень тварин допоможе дитині легше
-              запам'ятовувати їх зовнішній вигляд та особливості. Вона зможе
-              розрізняти різні види тварин за їх зовнішніми ознаками та
-              кольорами.
-            </Accordion.Body>
-          </Accordion.Item> */}
           <Accordion.Item eventKey="3">
             <Accordion.Header>Сімейна взаємодія</Accordion.Header>
             <Accordion.Body className={style.accordion_content}>
@@ -89,7 +82,7 @@ const ForParents = () => {
         <div className={style.content}>
           <p>
             Ваша дитина буде в захваті від цього досвіду. Ви зможете
-            спостерігати як вона засвоює нові знання та розвивається. 
+            спостерігати як вона засвоює нові знання та розвивається.
           </p>
         </div>
       </div>

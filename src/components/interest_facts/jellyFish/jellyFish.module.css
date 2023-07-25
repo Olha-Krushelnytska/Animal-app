@@ -5,11 +5,12 @@
     padding-top: 50px;
     margin-bottom: 50px;
 }
+
 .content_title {
     display: flex;
     text-align: start;
     margin-bottom: 30px;
-    color:  rgb(43, 2, 2);
+    color: rgb(43, 2, 2);
 }
 
 .jellyfish {
@@ -23,8 +24,8 @@
     transition-duration: 1s;
 }
 
-.jellyfish:hover{
-    box-shadow: 0 0 50px rgb(51, 147, 232); 
+.jellyfish:hover {
+    box-shadow: 0 0 50px rgb(51, 147, 232);
 }
 
 .img {
@@ -33,10 +34,10 @@
     object-fit: cover;
     border-radius: 20px;
 }
+
 .content_main {
     width: 800px;
     padding-left: 15px;
     margin-top: 20px;
-    color:  rgb(43, 2, 2);
+    color: rgb(43, 2, 2);
 }
-

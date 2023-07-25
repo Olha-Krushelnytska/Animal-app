@@ -10,9 +10,9 @@ const Peacock = () => {
   return (
     <div>
       <div className={style.container_peacock} id="peacock">
-      <div className={style.content_title}>
-              <h3>Найкрасивіша тварина</h3>
-            </div>
+        <div className={style.content_title}>
+          <h3>Найкрасивіша тварина</h3>
+        </div>
         <div className={style.peacock}>
           <Carousel>
             <Carousel.Item>
@@ -40,7 +40,6 @@ const Peacock = () => {
 
         <div className={style.content_main}>
           <div className={style.content_info}>
-
             <p>
               1. У самців павичів є величезний хвіст.Це один з найяскравіших та
               найкрасивіших хвостів серед усіх птахів.

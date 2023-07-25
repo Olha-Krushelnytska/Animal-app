@@ -10,7 +10,7 @@
     display: flex;
     text-align: start;
     margin-bottom: 30px;
-    color:  rgb(43, 2, 2);
+    color: rgb(43, 2, 2);
 }
 
 .turtle {
@@ -24,8 +24,8 @@
     transition-duration: 1s;
 }
 
-.turtle:hover{
-    box-shadow: 0 0 50px rgb(51, 147, 232); 
+.turtle:hover {
+    box-shadow: 0 0 50px rgb(51, 147, 232);
 }
 
 .img {
@@ -39,6 +39,5 @@
     width: 800px;
     padding-left: 15px;
     margin-top: 20px;
-    color:  rgb(43, 2, 2);
+    color: rgb(43, 2, 2);
 }
-

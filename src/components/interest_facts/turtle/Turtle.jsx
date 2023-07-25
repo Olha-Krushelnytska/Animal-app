@@ -10,9 +10,9 @@ const Turtle = () => {
   return (
     <div>
       <div className={style.container_turtle} id="turtle">
-      <div className={style.content_title}>
-              <h3>Довгожителька</h3>
-            </div>
+        <div className={style.content_title}>
+          <h3>Довгожителька</h3>
+        </div>
         <div className={style.turtle}>
           <Carousel>
             <Carousel.Item>
@@ -40,7 +40,6 @@ const Turtle = () => {
 
         <div className={style.content_main}>
           <div className={style.content_info}>
-
             <p>
               1. Деякі види черепах можуть жити більше 100 років, а деякі навіть
               переживають більше 150 років.

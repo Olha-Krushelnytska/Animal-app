@@ -10,9 +10,9 @@ const Snake = () => {
   return (
     <div>
       <div className={style.container_snake} id="snake">
-      <div className={style.content_title}>
-              <h3>Найдовша змія</h3>
-            </div>
+        <div className={style.content_title}>
+          <h3>Найдовша змія</h3>
+        </div>
         <div className={style.snake}>
           <Carousel>
             <Carousel.Item>
@@ -40,7 +40,6 @@ const Snake = () => {
 
         <div className={style.content_main}>
           <div className={style.content_info}>
-
             <p>
               1. Анаконда може досягати вражаючої довжини понад 9 метрів і ваги
               понад 250 кілограмів.

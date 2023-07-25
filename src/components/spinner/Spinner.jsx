@@ -6,7 +6,7 @@ const Spinner = () => {
   return (
     <div className={style.container}>
       <PacmanLoader
-      color={"#1E90FF"}
+        color={"#1E90FF"}
         size={50}
         aria-label="Loading Spinner"
         data-testid="loader"

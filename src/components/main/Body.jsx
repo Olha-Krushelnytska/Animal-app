@@ -8,7 +8,6 @@ import search from "../../img/search.png";
 import env from "react-dotenv";
 import Spinner from "../spinner/Spinner";
 
-
 const Body = () => {
   const [inputValue, setInputValue] = useState("");
   const [result, setResult] = useState([]);
@@ -24,7 +23,7 @@ const Body = () => {
       )
         .then((response) => response.json())
         .then((data) => setResult(data.results));
-        setBtnDisabled(true);
+      setBtnDisabled(true);
     } catch (error) {
       console.error(error);
     }
@@ -33,20 +32,18 @@ const Body = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if(inputValue){
+    if (inputValue) {
       changePhoto();
     }
   };
 
-  const handleChange = (event)=> {
+  const handleChange = (event) => {
     const value = event.target.value;
     setInputValue(value);
-    if (value){
+    if (value) {
       setBtnDisabled(false);
-    }else setBtnDisabled(true);
-  }
-
-
+    } else setBtnDisabled(true);
+  };
 
   return (
     <div className={style.wrapper}>
@@ -89,7 +86,11 @@ const Body = () => {
                 />
               </a>
             </div>
-          ) : null }
+          ) : (
+            <p className={style.message}>
+              Please, enter the correct name of the animal in English
+            </p>
+          )}
         </div>
       </div>
     </div>

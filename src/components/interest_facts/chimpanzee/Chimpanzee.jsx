@@ -10,9 +10,9 @@ const Chimpanzee = () => {
   return (
     <div>
       <div className={style.container_chimpanzee} id="chimpanzee">
-      <div className={style.content_title}>
-              <h3>Найрозумніша тварина</h3>
-            </div>
+        <div className={style.content_title}>
+          <h3>Найрозумніша тварина</h3>
+        </div>
         <div className={style.chimpanzee}>
           <Carousel>
             <Carousel.Item>
@@ -40,7 +40,6 @@ const Chimpanzee = () => {
 
         <div className={style.content_main}>
           <div className={style.content_info}>
-
             <p>
               1. Шимпанзе мають вражаючі когнітивні здібності, включаючи
               здатність до проблемного вирішення, використання інструментів,
@@ -55,8 +54,8 @@ const Chimpanzee = () => {
             </p>
             <p>3. Шимпанзе передають знання і навички між поколіннями.</p>
             <p>
-              4. Шимпанзе відчувають широкий спектр емоцій, включаючи
-              радість, смуток, страх, гнів та любов.
+              4. Шимпанзе відчувають широкий спектр емоцій, включаючи радість,
+              смуток, страх, гнів та любов.
             </p>
           </div>
         </div>

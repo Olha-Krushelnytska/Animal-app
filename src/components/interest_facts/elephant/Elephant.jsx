@@ -10,9 +10,9 @@ const Elephant = () => {
   return (
     <div>
       <div className={style.container_elephant} id="elephant">
-      <div className={style.content_title}>
-              <h3>Найсильніша тварина</h3>
-            </div>
+        <div className={style.content_title}>
+          <h3>Найсильніша тварина</h3>
+        </div>
         <div className={style.elephant}>
           <Carousel>
             <Carousel.Item>

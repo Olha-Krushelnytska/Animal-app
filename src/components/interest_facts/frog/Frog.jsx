@@ -10,9 +10,9 @@ const Frog = () => {
   return (
     <div>
       <div className={style.container_frog} id="frog">
-      <div className={style.content_title}>
-              <h3>Найотруйніша тварина</h3>
-            </div>
+        <div className={style.content_title}>
+          <h3>Найотруйніша тварина</h3>
+        </div>
         <div className={style.frog}>
           <Carousel>
             <Carousel.Item>

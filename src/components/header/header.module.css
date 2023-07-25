@@ -22,11 +22,12 @@
 
 .link_facts {
   text-decoration: none;
-  color:  rgb(43, 2, 2);
+  color: rgb(43, 2, 2);
   font-weight: bold;
 }
-.link_facts:hover{
-color: blue;
+
+.link_facts:hover {
+  color: blue;
 }
 
 .link_parents {
@@ -34,9 +35,10 @@ color: blue;
   color: rgb(43, 2, 2);
   font-weight: bold;
 }
-.link_parents:hover{
+
+.link_parents:hover {
   color: blue;
-  }
+}
 
 .logo_container {
   display: flex;
